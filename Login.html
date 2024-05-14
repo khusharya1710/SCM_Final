@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BB Login</title>
+</head>
+<link rel="stylesheet" href="./CSS/Login.css">
+<body>
+   <div class="main">
+      <div class="navbar">
+         <div class="icon">
+            <h2 class="logo">BB</h2>
+         </div>
+
+         <div class="date_id">
+          <h2 class="date" id="date">15 02 2023</h2>
+          <h2 class="time" id="time">08 : 10 : 45</h2>
+         </div>
+
+         <div class="menu">
+            <ul>
+               <li><a href="Login.html">HOME</a></li>
+               <li><a href="#">CONTACT</a></li>
+            </ul>
+         </div>
+
+         <div class="search">
+            <input class="srch" type="search" name="" placeholder="Type To  Text">
+            <a href="#"> <button class="btn">Search</button></a>
+         </div>
+      </div>
+
+      <div class="content">
+         <h1><br><br>Bigg Boss Contestants & <br><span>Voting</span><br>Zone</h1>
+         <p class="par">Bigg Boss votings starts from Monday 12:00 AM to Friday 11:59 PM.<br> Audience can vote to their favourite contestants.<br> Contestant who gets fewer Bigg Boss votes from the nominated <br>contestants will be eliminated from the Bigg Boss house.</p>
+
+         <button class="contact"><a href="#">Contact Us</a></button>
+
+         <div class="wrapper">
+            <div class="title-text">
+              <div class="title login">Login Form</div>
+              <div class="title signup">Signup Form</div>
+            </div>
+            <div class="form-container">
+              <div class="slide-controls">
+                <input type="radio" name="slide" id="login" checked>
+                <input type="radio" name="slide" id="signup">
+                <label for="login" class="slide login">Login</label>
+                <label for="signup" class="slide signup">Signup</label>
+                <div class="slider-tab"></div>
+              </div>
+              <div class="form-inner">
+                <form action=".\BB Voting.html" class="login">
+                  <div class="field">
+                    <input type="name" placeholder="Name" id="name_id"required>
+                  </div>
+                  <div class="field">
+                    <input type="number" placeholder="Mobile Number" min="1000000000" max="9999999999" required>
+                  </div>
+                  <div class="field">
+                    <input type="password" placeholder="Password" minlength="8" maxlength="10" required>
+                  </div>
+                  <div class="pass-link"><a href="#">Forgot password?</a></div>
+                  <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <a href=".BB Voting.html"><input type="submit" value="Login" onclick="handleLogin()"></a>
+                  </div>
+                  <div class="signup-link">Not a member?<a href="#">Signup now</a></div>
+                </form>
+                <form action=".\BB Voting.html" class="signup">
+                  <div class="field">
+                    <input type="text" placeholder="Name" required>
+                  </div>
+                  <div class="field">
+                    <input type="number" placeholder="Mobile Number" required>
+                  </div>
+                  <div class="field">
+                    <input type="password" placeholder="Password" minlength="8" maxlength="10" required>
+                  </div>
+                  <div class="field">
+                    <input type="password" placeholder="Confirm password" minlength="8" maxlength="10" required>
+                  </div>
+                  <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Signup">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+      </div>
+   </div>
+
+   <script src="./JS/Login.js"></script>   
+</body>
+</html>
